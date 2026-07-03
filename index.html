@@ -6,35 +6,45 @@
     <title>My GitHub Pages Site</title>
     <style>
         body {
-            background-color: #2e7d32; /* A solid, clean green */
+            background-color: #2e7d32; /* Solid, clean green */
             color: #000000;            /* Pure black text */
             font-family: sans-serif;   /* Clean, modern font */
             margin: 40px;
             padding: 0;
         }
-        
-        a {
-            color: #000000;
-            text-decoration: underline;
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
         }
-        
-        a:hover {
-            color: #333333;
+
+        /* Basic styling to keep the dropdown clean and black/white */
+        select {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 8px 12px;
+            font-size: 16px;
+            border: 2px solid #000000;
+            border-radius: 4px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to the Reaper the Rooster Site</h1>
-    <p>This is my site for my project work.</p>
+    <h1>Welcome to Reaper the Roosters Site</h1>
+    <p>Welcome to my Site, with some of my projects and ideas.</p>
     
-    <hr style="border: 1px solid #000;">
+    <hr style="border: 1px solid #000; margin: 20px 0;">
     
-    <h3>Navigation / Links</h3>
-    <ul>
-        <li><a href="#">Link One</a></li>
-        <li><a href="#">Link Two</a></li>
-    </ul>
+    <!-- Navigation Dropdown -->
+    <label for="nav-menu">Navigate to:</label>
+    <select id="nav-menu" onchange="location = this.value;">
+        <option value="" selected disabled>Choose a page...</option>
+        <option value="about.html">About Me</option>
+        <option value="projects.html">Projects</option>
+    </select>
 
 </body>
 </html>
