@@ -3,30 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <style>
-        body {
-            background-color: #2e7d32;
-            color: #000000;
-            font-family: sans-serif;
-            margin: 40px;
-            padding: 0;
-        }
-        a {
-            color: #000000;
-            text-decoration: underline;
-        }
-    </style>
+    <title>Projects — Reaper the Rooster</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>My Projects</h1>
-    
-    <p>This page features a simple overview of my work. I plan to use this space to document the various coding, design, or personal projects I push to my GitHub repositories.</p>
-    
-    <hr style="border: 1px solid #000; margin: 20px 0;">
-    
-    <p><a href="index.html">← Back to Home</a></p>
+    <nav class="site-nav">
+        <div class="brand">Reaper<span>TheRooster</span></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-wrap">
+
+        <h1 style="margin-top: 36px;">My Projects</h1>
+        <p class="section-intro" style="margin-left: 0;">
+            A mix of games, tools, and infrastructure work — some shipped, some still in progress.
+            Screenshots below are pulled straight from working builds.
+        </p>
+
+        <hr>
+
+        <!-- Video Games -->
+        <h2 class="section-title">Video Games</h2>
+        <p class="section-intro">Captain Monster's Splash &amp; Smash — a browser/desktop arcade game built from the ground up, including the art, level design, and enemy behavior.</p>
+
+        <div class="still-grid">
+            <img src="images/monster-smash-1.png" alt="Captain Monster's Splash and Smash title screen">
+            <img src="images/monster-smash-2.png" alt="Captain Monster's Splash and Smash Level 1 - The Haunted Harbor">
+            <img src="images/monster-smash-3.png" alt="Captain Monster's Splash and Smash Level 4 - Lock and Load">
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Captain Monster's Splash &amp; Smash</h3>
+                    <p>A multi-level arcade shooter with hand-built enemy waves, scoring, and lives systems, packaged as both a web build and a standalone desktop installer.</p>
+                    <div class="tag-row">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Canvas</span>
+                        <span class="tag">Electron</span>
+                        <span class="tag">Game Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Training Site -->
+        <h2 class="section-title">Training &amp; Education Platform</h2>
+        <p class="section-intro">Rise &amp; Code (rooster.Boot()) — a free, no-login, browser-based IT training site I'm building out course by course.</p>
+
+        <div class="still-grid">
+            <img src="images/rise-and-code-1.png" alt="Rise and Code homepage - 16 free hands-on IT courses">
+            <img src="images/rise-and-code-2.png" alt="Rise and Code Haskell Basics lesson page">
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Rise &amp; Code</h3>
+                    <p>16 courses and 72 lessons covering JavaScript, SQL, Linux, Terraform, Haskell, and AI — every exercise runs live in the browser with no account or install required.</p>
+                    <div class="tag-row">
+                        <span class="tag">EdTech</span>
+                        <span class="tag">Interactive Lessons</span>
+                        <span class="tag">Web Dev</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- AI / ML -->
+        <h2 class="section-title">AI Model Building &amp; Transformers</h2>
+        <p class="section-intro">Ongoing work training and fine-tuning models, and digging into transformer architecture from the inside out.</p>
+
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-icon">🧠</div>
+                <div class="card-body">
+                    <h3>Model Training &amp; Fine-Tuning</h3>
+                    <p>Building and adapting models for specific tasks, working through the full pipeline from data prep to evaluation.</p>
+                    <div class="tag-row">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">🔗</div>
+                <div class="card-body">
+                    <h3>Transformer Architecture</h3>
+                    <p>Hands-on exploration of attention mechanisms and transformer internals — understanding them well enough to modify, not just use.</p>
+                    <div class="tag-row">
+                        <span class="tag">Transformers</span>
+                        <span class="tag">Deep Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Cloud & Networks -->
+        <h2 class="section-title">Cloud &amp; Network Infrastructure</h2>
+        <p class="section-intro">Enterprise-scale architecture work — the systems and networks that keep everything else standing.</p>
+
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-icon">☁️</div>
+                <div class="card-body">
+                    <h3>Cloud Infrastructure</h3>
+                    <p>Designing and managing AWS environments with infrastructure-as-code, built for scale and repeatability.</p>
+                    <div class="tag-row">
+                        <span class="tag">AWS</span>
+                        <span class="tag">Terraform</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">🌐</div>
+                <div class="card-body">
+                    <h3>Enterprise Network Architecture</h3>
+                    <p>Network design and systems architecture for enterprise environments, balancing performance, security, and cost.</p>
+                    <div class="tag-row">
+                        <span class="tag">Networking</span>
+                        <span class="tag">Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Robotics & Automotive -->
+        <h2 class="section-title">Robotics &amp; Automotive Engineering</h2>
+        <p class="section-intro">Where the code meets hardware — embedded builds, robot agents, and automotive projects.</p>
+
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-icon">🤖</div>
+                <div class="card-body">
+                    <h3>Robot Agents &amp; Embedded Builds</h3>
+                    <p>Embedded systems projects and autonomous agent builds, working close to the hardware layer.</p>
+                    <div class="tag-row">
+                        <span class="tag">Robotics</span>
+                        <span class="tag">Embedded Systems</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">🚗</div>
+                <div class="card-body">
+                    <h3>Automotive Engineering</h3>
+                    <p>Applying engineering and software skills to automotive projects, from diagnostics to custom builds.</p>
+                    <div class="tag-row">
+                        <span class="tag">Automotive</span>
+                        <span class="tag">Engineering</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p><a href="index.html">← Back to Home</a></p>
+
+    </div>
+
+    <footer class="site-footer">
+        <p>Built by Reaper the Rooster. Check out more on <a href="https://github.com/ReaperTheRooster" target="_blank" rel="noopener">GitHub</a>.</p>
+    </footer>
 
 </body>
 </html>

@@ -3,40 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <style>
-        body {
-            background-color: #2e7d32;
-            color: #000000;
-            font-family: sans-serif;
-            margin: 40px;
-            padding: 0;
-        }
-        a {
-            color: #000000;
-            text-decoration: underline;
-        }
-        
-        img {
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #000000;
-            margin-top: 15px;
-        }
-    </style>
+    <title>About Me — Reaper the Rooster</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>All About Me</h1>
-    
-    <p>Welcome to my about page. This site is where I can share a little bit about who I am, what I do, and why I built this GitHub Pages site.I am a developer and enterprise architect, with many years of Cloud infrastructure experiance. I got the name Reaper at my work, and i have lots of chickens running around my yard, so that is where the Rooster name comes from.  I sometimes include it in my games as well as other projects i have done.  CHeck out some of my repos at https://github.com/ReaperTheRooster. </p>
-    
-    <!-- PHOTO LINE: Paste your image link or file path inside the src="" quotes below -->
-    <img src="Rooster.gif" alt="About Me Photo">
-    
-    <hr style="border: 1px solid #000; margin: 20px 0;">
-    
-    <p><a href="index.html">← Back to Home</a></p>
+    <nav class="site-nav">
+        <div class="brand">Reaper<span>TheRooster</span></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-wrap">
+
+        <div class="about-layout">
+            <img class="about-photo" src="images/headshot.png" alt="Reaper the Rooster portrait">
+            <div class="about-text">
+                <h1>All About Me</h1>
+                <p>
+                    Before IT, I spent years in industrial gases, oil, and international business — work
+                    that took me around the world and taught me how large, complex operations actually run.
+                    I'm now a developer and enterprise architect with years of experience designing cloud
+                    infrastructure and networks for production systems. During the day that means
+                    architecting for scale, security, and reliability; outside of it, I chase the same
+                    problems for fun — just with fewer meetings and more monsters.
+                </p>
+                <p>
+                    Lately a good chunk of my personal time goes into exploring and building with AI
+                    models — figuring out how to take one from "interesting idea" to something that
+                    actually does useful work. It's the same systems thinking I use in cloud architecture,
+                    just pointed at a different kind of infrastructure.
+                </p>
+                <p>
+                    I also spend time on robotics and automotive engineering projects, where the work moves
+                    from the cloud down to the metal — embedded boards, sensors, and machines that have to
+                    behave correctly in the real world, not just in a terminal.
+                </p>
+                <p>
+                    The name "Reaper" came from the job; the "Rooster" came from home — I've got a yard full
+                    of actual chickens, and the name found its way into my games and projects. Between the
+                    infrastructure work, the AI experiments, the games, and the robots, this site is where I
+                    keep track of it all. Check out the <a href="projects.html">Projects page</a> for the
+                    details, or browse the repos directly on
+                    <a href="https://github.com/ReaperTheRooster" target="_blank" rel="noopener">GitHub</a>.
+                </p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Areas I Work In</h2>
+        <p class="section-intro">The recurring themes across my projects, day job and side projects alike.</p>
+
+        <div class="skill-list">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Cloud &amp; Enterprise Architecture</h3>
+                    <p>Designing and running cloud infrastructure — AWS, Terraform-managed stacks, and the network design that ties it together at enterprise scale.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3>AI Model Building &amp; Transformers</h3>
+                    <p>Hands-on work with transformer architectures — training, fine-tuning, and applying models to real problems rather than just demos.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3>Robotics &amp; Automotive Engineering</h3>
+                    <p>Embedded systems and robot agents, plus automotive engineering projects that bring software down to hardware that has to work in the field.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3>Game Development</h3>
+                    <p>Full indie builds — design, code, and art — including the Captain Monster series showcased on the Projects page.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="site-footer">
+        <p>Built by Reaper the Rooster. Check out more on <a href="https://github.com/ReaperTheRooster" target="_blank" rel="noopener">GitHub</a>.</p>
+    </footer>
 
 </body>
 </html>
